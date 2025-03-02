@@ -136,9 +136,9 @@
     margin-top: 1rem;
     color: #007bff;
   }
-
+  
   /* Featured Products Section */
-.featured-products {
+  .featured-products {
     text-align: center;
     padding: 3rem 0;
   }
@@ -191,40 +191,37 @@
     padding: 1rem 0;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  /* inventory.html Specific Styles */
+  .inventory-list {
+    padding: 2rem;
+  }
   
-    header nav {
-      margin-top: 1rem;
-    }
+  .inventory-list h2 {
+    margin-bottom: 1rem;
+  }
   
-    header nav a {
-      margin: 0 1rem 0.5rem 0;
-    }
+  .inventory-list .lookup-bar {
+    margin-bottom: 1.5rem;
+  }
   
-    .hero h1 {
-      font-size: 2.5rem;
-    }
+  .inventory-list .lookup-bar input[type="text"] {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+  }
   
-    .hero p {
-      font-size: 1rem;
-    }
-    /* inventory.html Specific Styles */
-.inventory-list table {
+  .inventory-list table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 2rem;
+    margin-top: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
   }
   
   .inventory-list th, .inventory-list td {
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.8rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
@@ -282,7 +279,7 @@
     .inventory-list td:nth-child(2):before { content: "Description"; }
     .inventory-list td:nth-child(3):before { content: "Quantity"; }
   }
-  /* Admin Login Styles */
+/* Admin Login Styles */
 .admin-login {
     display: flex;
     flex-direction: column;
@@ -321,4 +318,42 @@
     background-color: #f2f2f2;
   }
   
+  /* Customer Forms Styles */
+  .customer-forms {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
   }
+  
+  .login-form, .register-form {
+    width: 300px;
+  }
+  
+  .login-form h2, .register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .login-form form, .register-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label, .register-form label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-form input, .register-form input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .message.error {
+    color: red;
+  }
+  
+  .message.success {
+    color: green;
+  }  
