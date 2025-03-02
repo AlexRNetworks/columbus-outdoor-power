@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Images</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Admin Panel</div>
+    <nav>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+  </header>
+  <main class="admin-images">
+    <h2>Image Management</h2>
+    <div id="imageEditor">
+      <div class="image-item">
+        <label for="heroImage">Hero Image:</label>
+        <input type="file" id="heroImage" accept="image/*">
+        <img id="heroPreview" src="assets/images/hero-bg.jpg" alt="Hero Image Preview">
+      </div>
+      </div>
+    <button id="saveImagesBtn" class="btn">Save Changes</button>
+    <div id="imageMessage" class="message"></div>
+  </main>
+  <script src="js/admin.js"></script>
+</body>
+</html>
