@@ -1,1 +1,324 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  header nav a {
+    color: white;
+    margin-left: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  header nav a:hover, header nav a.active {
+    background-color: #34495e;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 8rem 2rem;
+  }
+  
+  .hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn i {
+    margin-left: 0.5rem;
+  }
+  
+  /* Services Section */
+  .services {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .services h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-item {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .service-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff;
+  }
 
+  /* Featured Products Section */
+.featured-products {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .featured-products h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-item h3, .product-item p {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .product-item p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav {
+      margin-top: 1rem;
+    }
+  
+    header nav a {
+      margin: 0 1rem 0.5rem 0;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+    /* inventory.html Specific Styles */
+.inventory-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .inventory-list th, .inventory-list td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .inventory-list th {
+    background-color: #f0f0f0;
+    font-weight: 500;
+  }
+  
+  .inventory-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .inventory-list tr:hover {
+    background-color: #f0f8ff;
+  }
+  
+  /* Responsive Table */
+  @media (max-width: 768px) {
+    .inventory-list table, .inventory-list thead, .inventory-list tbody, .inventory-list th, .inventory-list td, .inventory-list tr {
+      display: block;
+    }
+  
+    .inventory-list thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    .inventory-list tr {
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+    }
+  
+    .inventory-list td {
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+    }
+  
+    .inventory-list td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-label);
+      font-weight: bold;
+    }
+  
+    .inventory-list td:nth-child(1):before { content: "Item"; }
+    .inventory-list td:nth-child(2):before { content: "Description"; }
+    .inventory-list td:nth-child(3):before { content: "Quantity"; }
+  }
+  /* Admin Login Styles */
+.admin-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .admin-login form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .admin-login form label, .admin-login form input, .admin-login form button {
+    margin-bottom: 1rem;
+  }
+  
+  .message.error {
+    color: red;
+  }
+  
+  /* Admin Inventory Styles */
+  .admin-inventory table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-inventory th, .admin-inventory td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .admin-inventory th {
+    background-color: #f2f2f2;
+  }
+  
+  }
