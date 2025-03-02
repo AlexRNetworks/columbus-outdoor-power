@@ -26,7 +26,11 @@
       <h1>Inventory</h1>
     </section>
     <section class="inventory-list">
-      <table>
+      <h2>Inventory Lookup</h2>
+      <div class="lookup-bar">
+        <input type="text" id="searchInput" placeholder="Search for items...">
+      </div>
+      <table id="inventoryTable">
         <thead>
           <tr>
             <th>Item</th>
@@ -36,21 +40,26 @@
         </thead>
         <tbody>
           <tr>
-            <td>Lawn Mower Blades</td>
-            <td>Replacement blades for various mower models.</td>
-            <td>50</td>
+            <td data-label="Item">Lawn Mower Blades</td>
+            <td data-label="Description">Replacement blades for various mower models.</td>
+            <td data-label="Quantity">50</td>
           </tr>
           <tr>
-            <td>Trimmer Line</td>
-            <td>High-strength trimmer line for edging.</td>
-            <td>100</td>
+            <td data-label="Item">Trimmer Line</td>
+            <td data-label="Description">High-strength trimmer line for edging.</td>
+            <td data-label="Quantity">100</td>
           </tr>
           <tr>
-            <td>Chainsaw Chain</td>
-            <td>Replacement chain for professional chainsaws.</td>
-            <td>30</td>
+            <td data-label="Item">Chainsaw Chain</td>
+            <td data-label="Description">Replacement chain for professional chainsaws.</td>
+            <td data-label="Quantity">30</td>
           </tr>
-          </tbody>
+          <tr>
+            <td data-label="Item">Electric Mower</td>
+            <td data-label="Description">Cordless electric lawn mower.</td>
+            <td data-label="Quantity">15</td>
+          </tr>
+        </tbody>
       </table>
     </section>
   </main>
@@ -58,5 +67,6 @@
     <p>&copy; 2024 Columbus Outdoor Power Equipment. All rights reserved.</p>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/inventory.js"></script>
 </body>
 </html>
