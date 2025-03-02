@@ -353,6 +353,20 @@
   .message.error {
     color: red;
   }
+
+/* Admin Images Styles */
+.admin-images {
+  padding: 2rem;
+}
+
+.admin-images .image-item {
+  margin-bottom: 1rem;
+}
+
+.admin-images img {
+  max-width: 300px;
+  max-height: 200px;
+}
   
   .message.success {
     color: green;
